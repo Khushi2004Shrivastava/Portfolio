@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Google Data Analytics",
+    "issuer": "Google",
+    "year": "June 2024",
+    "icon": "fab fa-google",
+    "certificate_url": "https://drive.google.com/file/d/16nfC4jd0HslJIjx684sgseUXfZ-0urw_/view?usp=drive_link"
+  },
+  {
+    "title": "Google AI Essentials",
+    "issuer": "Google",
+    "year": "June 2024",
+    "icon": "fab fa-google",
+    "certificate_url": "https://drive.google.com/file/d/1n7lFqWcSsmCxJCwrH-kKedu6NkodZdA2/view?usp=sharing"
+  },
+
+  {
+    "title": "AI Ladder Framework",
+    "issuer": "IBM",
+    "year": "Dec 2023",
+    "icon": "fab fa-ibm",
+    "certificate_url": "https://drive.google.com/file/d/1-3Ga6oV5beaKXri0r4TGbVTV9mcfmfOW/view?usp=sharing"
+  },
+  {
+    "title": "Data Science",
+    "issuer": "IBM",
+    "year": "Dec 2023",
+    "icon": "fab fa-ibm",
+    "certificate_url": "https://drive.google.com/file/d/1xSfl0ELs7X2AbVkH809GF6lPqxwviveL/view?usp=sharing"
+  }
+]

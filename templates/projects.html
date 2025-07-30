@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Projects - Khushi{% endblock %}
+
+{% block content %}
+<h2>My Projects</h2>
+<div class="row">
+  {% for project in projects %}
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">{{ project.title }}</h5>
+        <p class="card-text">{{ project.description }}</p>
+        {% if project.link %}
+          <a href="{{ project.link }}" class="btn btn-outline-primary" target="_blank">View on GitHub</a>
+        {% else %}
+          <button type="button" class="btn btn-outline-danger" onclick="showPrivateMessage()">🔒 Private – Contact for Access</button>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<script>
+  function showPrivateMessage() {
+    alert("🔒 This project is private.\nKindly contact me for access.");
+  }
+</script>
+{% endblock %}

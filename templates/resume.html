@@ -1,0 +1,38 @@
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="exp-container">
+    {% for exp in experience %}
+      <div class="exp-card" data-aos="fade-up">
+        <h3>{{ exp.title }}</h3>
+        <p>{{ exp.company }} ({{ exp.year }})</p>
+        <p>{{ exp.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="edu-container">
+    {% for edu in education %}
+      <div class="edu-card" data-aos="fade-right">
+        <h3>{{ edu.icon }} {{ edu.institution }}</h3>
+        <p>{{ edu.degree }} ({{ edu.year }})</p>
+        <strong>{{ edu.score }}</strong>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="cert-container">
+    {% for cert in certifications %}
+      <div class="cert-card" data-aos="fade-left">
+        <i class="{{ cert.icon }}"></i>
+        <h3>{{ cert.title }}</h3>
+        <p>{{ cert.issuer }} - {{ cert.year }}</p>
+        <a href="{{ cert.certificate_url }}" target="_blank" class="view-btn">View Certificate</a>
+      </div>
+    {% endfor %}
+  </div>
+</section>

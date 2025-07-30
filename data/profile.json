@@ -1,0 +1,51 @@
+{
+  "education": [
+    {
+      "degree": "BTech in Computer Science and Engineering",
+      "institution": "Birla Institute of Technology, Mesra",
+      "year": "2022 - Present",
+      "details": "CGPA: 8.1/10"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Graphic Team Member",
+      "org": "GDSC, BIT Mesra",
+      "duration": "2023 - Present",
+      "description": "Worked on visual designs and event branding."
+    },
+    {
+      "role": "Technical Committee Member",
+      "org": "BIT Tech Committee",
+      "duration": "2022 - Present",
+      "description": "Organized and participated in various tech fests."
+    }
+  ],
+  "certifications": [
+    {
+      "title": "AI Ladder Framework",
+      "org": "IBM",
+      "date": "Dec 2023"
+    },
+    {
+      "title": "Google Data Analytics Certification",
+      "org": "Google & Coursera",
+      "date": "Jun 2024"
+    },
+    {
+      "title": "Google AI Essentials Certification",
+      "org": "Google & Coursera",
+      "date": "Jun 2024"
+    },
+    {
+      "title": "Data Science Certification",
+      "org": "IBM",
+      "date": "Dec 2023"
+    },
+    {
+      "title": "Web Development Certification",
+      "org": "IIIT Kota",
+      "date": "Mar 2024"
+    }
+  ]
+}

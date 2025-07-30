@@ -1,0 +1,16 @@
+{
+  "education": [
+    {
+      "degree": "B.Tech in CSE",
+      "institution": "BIT Mesra",
+      "year": "2022–2026"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Google Data Analytics",
+      "issuer": "Google",
+      "year": "2024"
+    }
+  ]
+}

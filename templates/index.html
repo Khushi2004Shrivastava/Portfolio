@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+{% block title %}Home - Khushi{% endblock %}
+
+{% block content %}
+
+
+
+<section id="hero" data-aos="fade-down">
+  <div class="hero-content">
+    <div class="hero-text" data-aos="fade-right">
+      <h1>Welcome to my portfolio website</h1>
+      <h2>I'm Khushi Shrivastava</h2>
+      <p>AI Engineer | Software Developer <br> Creative Developer | Tech Explorer </p>
+    </div>
+    <div class="hero-image" data-aos="fade-left">
+      <img src="{{ url_for('static', filename='images/hero.png') }}" alt="Khushi working">
+    </div>
+  </div>
+</section>
+
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>"Hello! Need assistance with chatbot development or software building? I'm here to help. With a strong background in AI/ML-based chatbot solutions and experience in modern web design, I can turn your ideas into powerful digital products. Feel free to reach out!"</p>
+</section>
+
+
+<section id="experience" class="section bg-alt">
+  <h2 class="section-title" data-aos="fade-up">Experience</h2>
+
+  <div class="experience-container">
+
+    <div class="experience-box" data-aos="fade-up" data-aos-delay="100">
+      <h3>Summer Intern</h3>
+      <h4>MNIT Jaipur</h4>
+      <p><strong>Duration:</strong> May 2025 - July 2025</p>
+      <p>Worked on AI based chatbot development using Python. Gained insight knowledge of working with various pre-trained models and also on training new models. improved performance from traditional models by 40%.</p>
+    </div>
+
+    <div class="experience-box" data-aos="fade-up" data-aos-delay="200">
+      <h3>Data Scientist Intern</h3>
+      <h4>Plasmid</h4>
+      <p><strong>Duration:</strong> Dec 2024 - Feb 2025</p>
+      <p>Developed ML models. Gained experience on working wih predictions and real world scenario using ML and data analysis techniques</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="projects" data-aos="fade-up">
+  <h2>Projects</h2>
+  <div class="projects-container">
+    {% for project in projects %}
+      <div class="card" data-aos="zoom-in" data-aos-delay="{{ loop.index0 * 100 }}" data-aos-duration="600">
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.description }}</p>
+      <a href="{{ project.link }}" target="_blank">View on GitHub</a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="education" data-aos="fade-up">
+  <h2 class="section-heading"><i class="fas fa-graduation-cap icon-left" data-aos="fade-right"></i> Education</h2>
+  <div class="edu-cert-container">
+
+    <div class="edu-card" data-aos="fade-right">
+      <h3><i class="fas fa-university icon-inline"></i> B.Tech in CSE</h3>
+      <p><strong>Institute:</strong> BIT Mesra</p>
+      <p><strong>CGPA:</strong> 8.32 / 10</p>
+      <p>2022 – 2026</p>
+    </div>
+
+    <div class="edu-card" data-aos="fade-left">
+      <h3><i class="fas fa-school icon-inline"></i> Class XII – CBSE</h3>
+      <p><strong>School:</strong> Jaipuria Vidyalaya, Jaipur</p>
+      <p><strong>Percentage:</strong> 90.4%</p>
+      <p>Year: 2022</p>
+    </div>
+
+    <div class="edu-card" data-aos="fade-right">
+      <h3><i class="fas fa-school icon-inline"></i> Class X – CBSE</h3>
+      <p><strong>School:</strong> Jaipuria Vidyalaya, Jaipur</p>
+      <p><strong>Percentage:</strong> 94.2%</p>
+      <p>Year: 2020</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="certifications" data-aos="fade-up">
+  <h2 class="section-heading">
+    <i class="fas fa-certificate icon-left" data-aos="fade-right"></i> Certifications
+  </h2>
+  <div class="edu-cert-container">
+
+    <div class="edu-card" data-aos="fade-right">
+      <h3><i class="fab fa-google icon-inline"></i> Google Data Analytics</h3>
+      <p><strong>Platform:</strong> Coursera</p>
+      <p><strong>Date:</strong> June 2024</p>
+      <a href="https://drive.google.com/file/d/16nfC4jd0HslJIjx684sgseUXfZ-0urw_/view?usp=drive_link" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+    <div class="edu-card" data-aos="fade-left">
+      <h3><i class="fab fa-google icon-inline"></i> Google AI Essentials</h3>
+      <p><strong>Platform:</strong> Coursera</p>
+      <p><strong>Date:</strong> June 2024</p>
+      <a href="https://drive.google.com/file/d/1n7lFqWcSsmCxJCwrH-kKedu6NkodZdA2/view?usp=sharing" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+    <div class="edu-card" data-aos="fade-right">
+      <h3><i class="fas fa-brain icon-inline"></i> Data Science</h3>
+      <p><strong>Platform:</strong> IBM SkillsBuild</p>
+      <p><strong>Date:</strong> Dec 2023</p>
+      <a href="https://drive.google.com/file/d/1xSfl0ELs7X2AbVkH809GF6lPqxwviveL/view?usp=sharing" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+    <div class="edu-card" data-aos="fade-right">
+      <h3><i class="fas fa-brain icon-inline"></i> AI Ladder Framework</h3>
+      <p><strong>Platform:</strong> IBM SkillsBuild</p>
+      <p><strong>Date:</strong> Dec 2023</p>
+      <a href="https://drive.google.com/file/d/1-3Ga6oV5beaKXri0r4TGbVTV9mcfmfOW/view?usp=sharing" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+    <div class="edu-card" data-aos="fade-left">
+      <h3><i class="fas fa-code icon-inline"></i> Web Development</h3>
+      <p><strong>Institution:</strong> IIIT Kota</p>
+      <p><strong>Date:</strong> Mar 2024</p>
+      <a href="https://drive.google.com/file/d/1q3wQuaRqFm5SanXSqMwQUx7DuEhG_y7K/view?usp=sharing" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+    <div class="edu-card" data-aos="fade-right">
+      <h3><i class="fas fa-database icon-inline"></i> MySQL for DBMS</h3>
+      <p><strong>Platform:</strong> Great Learning</p>
+      <p><strong>Date:</strong> Mar 2024</p>
+      <a href="https://drive.google.com/file/d/1bIkpNnOZxpYO0OWFo7_D81-wlnTWZ_KQ/view?usp=sharing" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+    <div class="edu-card" data-aos="fade-left">
+      <h3><i class="fas fa-cloud icon-inline"></i> Postman API Fundamentals</h3>
+      <p><strong>Platform:</strong> Postman</p>
+      <p><strong>Date:</strong> Oct 2024</p>
+      <a href="https://badgr.com/public/assertions/hKru0P6jScyHQCqMtiTWfA" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:shrivastava.2004khushi@gmail.com">shrivastava.2004khushi@gmail.com</a></p>
+</section>
+{% endblock %}

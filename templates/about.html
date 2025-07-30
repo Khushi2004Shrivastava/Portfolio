@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}About - Khushi{% endblock %}
+
+{% block content %}
+<h2>About Me</h2>
+<p>Hello! Need assistance with chatbot development or software building? I'm here to help. With a strong background in AI/ML-based chatbot solutions and experience in modern web design, I can turn your ideas into powerful digital products. Feel free to reach out!"</p>
+<ul>
+  <li>CGPA: 8.32/10</li>
+  <li>GitHub: <a href="https://github.com/Khushi2004Shrivastava" target="_blank">Khushi2004Shrivastava</a></li>
+  <li>Email: <a href="mailto:shrivastava.2004khushi@gmail.com">shrivastava.2004khushi@gmail.com</a></li>
+</ul>
+
+<h2>Education</h2>
+<ul>
+  {% for edu in profile.education %}
+    <li>
+      <strong>{{ edu.degree }}</strong> - {{ edu.institution }} ({{ edu.year }})<br>
+      {{ edu.details }}
+    </li>
+  {% endfor %}
+</ul>
+
+<h2>Experience</h2>
+<ul>
+  {% for exp in profile.experience %}
+    <li>
+      <strong>{{ exp.role }}</strong> - {{ exp.org }} ({{ exp.duration }})<br>
+      {{ exp.description }}
+    </li>
+  {% endfor %}
+</ul>
+
+<h2>Certifications</h2>
+<ul>
+  {% for cert in profile.certifications %}
+    <li>
+      <strong>{{ cert.title }}</strong> - {{ cert.org }} ({{ cert.date }})
+    </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}

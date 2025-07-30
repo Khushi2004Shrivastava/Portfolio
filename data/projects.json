@@ -1,0 +1,17 @@
+[
+    {
+        "title": "SmartCart Assistant",
+        "description": "Track products, budgets, and expiry alerts using Flask.",
+        "link": "https://github.com/Khushi2004Shrivastava/MyShopping-Assisstant"
+    },
+    {
+        "title": "PDF Chatbot",
+        "description": "Chat with PDFs using NLP techniques like TF-IDF, summarization, POS tagging, and BART.",
+        "link": ""
+    },
+    {
+        "title": "Text Language Translator App",
+        "description": "An Android application that translates text between multiple languages.",
+        "link": "https://github.com/Khushi2004Shrivastava/Text-Language-translator"
+    }
+]

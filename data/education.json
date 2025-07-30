@@ -1,0 +1,23 @@
+[
+  {
+    "institution": "Birla Institute of Technology, Mesra",
+    "degree": "B.Tech in Computer Science",
+    "score": "CGPA: 8.32",
+    "year": "2022 - Present",
+    "icon": "🎓"
+  },
+  {
+    "institution": "Jaipuria Vidyalaya, Jaipur",
+    "degree": "Class XII (CBSE)",
+    "score": "90.4%",
+    "year": "2022",
+    "icon": "🏫"
+  },
+  {
+    "institution": "Jaipuria Vidyalaya, Jaipur",
+    "degree": "Class X (CBSE)",
+    "score": "94.2%",
+    "year": "2020",
+    "icon": "🏫"
+  }
+]
